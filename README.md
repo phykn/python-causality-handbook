@@ -1,14 +1,10 @@
 # Causal Inference for The Brave and True: 한국어 강의노트
 
-이 저장소는 [Causal Inference for The Brave and True](https://github.com/matheusfacure/python-causality-handbook)를 참고자료로 두고, 한국어 독자를 위한 강의노트를 새로 작성하는 작업 공간이다.
+이 저장소는 `Causal Inference for The Brave and True`를 참고해 새로 작성하는 한국어 강의노트입니다.
 
-목표는 번역본을 만드는 것이 아니다. 각 장은 독자가 이 페이지 안에서 질문, 예시, 실패한 비교, 공정한 비교, 방법 이름, 수식과 코드를 차례로 확인할 수 있는 독립된 한국어 글로 쓴다.
+원문을 문장별로 옮기는 번역본이 아니라, 인과추론을 처음 접하는 독자가 한 장씩 따라 읽을 수 있는 독립적인 글을 목표로 합니다.
 
-## 현재 구조
-
-- `causal-inference-for-the-brave-and-true/`: 참고용 영어 자료.
-- `ko/`: 한국어 강의노트 원고.
-- `ko/assets/`: 한국어 강의노트에 쓰는 그림 자료.
+각 장은 익숙한 상황에서 시작해, 왜 단순한 비교가 위험한지 보여주고, 필요한 용어와 수식, 코드를 뒤에 붙이는 방식으로 구성합니다. 어려운 내용을 빼기보다는 먼저 이해할 수 있는 질문과 예시를 놓고, 그 다음에 이름을 붙입니다.
 
 ## 한국어 원고
 
@@ -22,4 +18,3 @@
 
 - [참고 책 웹사이트](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
 - [참고 GitHub 저장소](https://github.com/matheusfacure/python-causality-handbook)
-- [공식 한국어 번역](https://github.com/TeamCausality/Causal-Inference-with-Python)
