@@ -13,6 +13,7 @@
 - [추정값은 왜 흔들리는가](ko/03-why-estimates-vary.md)
 - [숨은 원인이 비교를 속이는 방식](ko/04-hidden-causes-confounding.md)
 - [선택 편향은 왜 교란요인과 다른가](ko/05-selection-bias.md)
+- [그래프로 원인과 비교를 그려보기](ko/06-causal-graphs.md)
 
 ## 참고
 
