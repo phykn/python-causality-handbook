@@ -7,7 +7,6 @@
 ## 현재 구조
 
 - `causal-inference-for-the-brave-and-true/`: upstream 원본 영어 자료.
-- `graph/`: 한국어 강의노트를 어떤 순서와 기준으로 쓸지 정리한 내용 그래프.
 - `ko/`: 한국어 강의노트 원고.
 
 ## 한국어 원고

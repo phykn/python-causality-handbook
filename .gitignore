@@ -31,11 +31,10 @@ causal-inference-for-the-brave-and-true/_build/
 causal-inference-for-the-brave-and-true-ko/_build/
 
 # Local editor and OS files
+.github/
+.obsidian/
+graph/
 .idea/
 .vscode/
 .DS_Store
 Thumbs.db
-
-# Keep GitHub repository metadata tracked.
-!.github/
-!.github/**
