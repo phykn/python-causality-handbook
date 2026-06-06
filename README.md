@@ -17,6 +17,7 @@
 - [회귀를 조건부 비교로 읽기](ko/07-regression-adjustment.md)
 - [더미 변수와 집단 비교](ko/08-dummy-variables.md)
 - [좋은 통제와 나쁜 통제](ko/09-good-bad-controls.md)
+- [관측 자료에서 비교 대상을 찾는다는 것](ko/10-matching.md)
 
 ## 참고
 
