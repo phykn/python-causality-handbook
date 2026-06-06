@@ -211,26 +211,36 @@ E[Y | T = 1] - E[Y | T = 0] ≈ 평균 효과
 
 ## 직접 섞어 보면
 
-아래 코드는 20명의 플레이어를 운으로 두 그룹에 나누는 작은 예시다.
+아래 코드는 20명의 플레이어를 운으로 두 그룹에 나누고, 두 그룹의 원래 승률이 비슷한지 확인하는 작은 예시다.
 
 ```python
 import random
 
 players = list(range(20))
+base_win_rate = [
+    48, 52, 55, 51, 58,
+    49, 54, 56, 53, 50,
+    57, 52, 55, 51, 54,
+    49, 56, 53, 50, 58,
+]
+
 random.seed(7)
 random.shuffle(players)
 
 new_mouse = players[:10]
 old_mouse = players[10:]
 
-new_mouse, old_mouse
+new_mouse_before = sum(base_win_rate[p] for p in new_mouse) / len(new_mouse)
+old_mouse_before = sum(base_win_rate[p] for p in old_mouse) / len(old_mouse)
+
+new_mouse_before, old_mouse_before
 ```
 
 이 코드는 “잘하는 사람을 골라서 새 마우스를 준다”가 아니다.
 
 그냥 섞고 나눈다.
 
-실제 실험에서는 이렇게 나눈 뒤, 두 그룹의 원래 승률이 비슷한지도 확인한다. 두 그룹이 실험 전부터 너무 다르면, 실험 결과를 믿기 어려워지기 때문이다.
+그다음 두 그룹의 원래 승률 평균이 비슷한지 본다. 두 그룹이 실험 전부터 너무 다르면, 실험 결과를 믿기 어려워지기 때문이다.
 
 ## 여기서 다음 질문이 생긴다
 
