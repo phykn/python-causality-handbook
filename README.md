@@ -1,12 +1,12 @@
 # Causal Inference for The Brave and True: 한국어 강의노트
 
-이 저장소는 [Causal Inference for The Brave and True](https://github.com/matheusfacure/python-causality-handbook)의 원본 영어 자료를 보존하고, 한국어 독자를 위한 강의노트를 새로 작성하기 위한 작업 공간이다.
+이 저장소는 [Causal Inference for The Brave and True](https://github.com/matheusfacure/python-causality-handbook)를 참고자료로 두고, 한국어 독자를 위한 강의노트를 새로 작성하는 작업 공간이다.
 
-목표는 원문을 1:1로 번역하는 것이 아니다. 원문의 코드, 그림, 수식, 식별 논리는 보존하되, 중고등학생도 판단 순서를 따라갈 수 있도록 질문, 예시, 실패한 비교, 공정한 비교, 방법 이름, 수식과 코드 순서로 다시 설명한다.
+목표는 번역본을 만드는 것이 아니다. 각 장은 독자가 이 페이지 안에서 질문, 예시, 실패한 비교, 공정한 비교, 방법 이름, 수식과 코드를 차례로 확인할 수 있는 독립된 한국어 글로 쓴다.
 
 ## 현재 구조
 
-- `causal-inference-for-the-brave-and-true/`: upstream 원본 영어 자료.
+- `causal-inference-for-the-brave-and-true/`: 참고용 영어 자료.
 - `ko/`: 한국어 강의노트 원고.
 
 ## 한국어 원고
@@ -15,7 +15,7 @@
 
 ## 한국어 작성 목차
 
-이 목차는 원본 장 제목을 그대로 따르지 않는다. 독자가 인과추론을 배울 때 필요한 판단 순서에 맞춰 다시 묶은 작성 계획이다.
+이 목차는 한국어 강의노트를 독립적으로 쓰기 위한 작성 계획이다. 독자가 인과추론을 배울 때 필요한 판단 순서에 맞춰 묶었다.
 
 ### 1부. 인과 질문 세우기
 
@@ -85,6 +85,6 @@
 
 ## 참고
 
-- [원본 책 웹사이트](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
-- [원본 GitHub 저장소](https://github.com/matheusfacure/python-causality-handbook)
+- [참고 책 웹사이트](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
+- [참고 GitHub 저장소](https://github.com/matheusfacure/python-causality-handbook)
 - [공식 한국어 번역](https://github.com/TeamCausality/Causal-Inference-with-Python)

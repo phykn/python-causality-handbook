@@ -106,9 +106,9 @@ Y1 - Y0
 
 문제는 한 학교에 대해 `Y1`과 `Y0`를 동시에 볼 수 없다는 것이다. 태블릿을 받은 학교는 `Y1`만 관측된다. 태블릿을 받지 않은 학교는 `Y0`만 관측된다.
 
-원문에서는 이 생각을 다음 그림으로 보여준다.
+아래 그림은 이 문제를 한눈에 보여준다.
 
-![Potential outcomes](../causal-inference-for-the-brave-and-true/data/img/intro/potential_outcomes.png)
+![두 가능한 결과 중 하나만 관측되는 상황](../causal-inference-for-the-brave-and-true/data/img/intro/potential_outcomes.png)
 
 한 대상에게 두 길이 있지만, 현실에서 우리가 볼 수 있는 길은 하나뿐이다. 보이지 않는 다른 길을 어떻게 대신 비교할지가 인과추론의 시작이다.
 
@@ -132,7 +132,7 @@ E[Y | T = 1] - E[Y | T = 0]
 관측된 평균 차이 = 실제 treatment 효과 + 원래 있었던 집단 차이
 ```
 
-원문의 핵심 수식은 같은 말을 더 정확히 쓴 것이다.
+이 관계를 수식으로 쓰면 다음과 같다.
 
 ```text
 E[Y | T = 1] - E[Y | T = 0]
