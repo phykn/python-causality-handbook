@@ -11,7 +11,7 @@
 - [상관관계와 인과관계는 왜 다른가](ko/01-correlation-vs-causation.md)
 - [무작위 실험이 강한 이유](ko/02-randomized-experiments.md)
 - [추정값은 왜 흔들리는가](ko/03-why-estimates-vary.md)
-- [숨은 원인이 비교를 속이는 방식](ko/04-hidden-causes-confounding.md)
+- [숨은 이유가 평균 차이에 섞이는 방식](ko/04-hidden-causes-confounding.md)
 - [선택 편향은 왜 교란요인과 다른가](ko/05-selection-bias.md)
 - [그래프로 원인과 비교를 그려보기](ko/06-causal-graphs.md)
 
