@@ -15,6 +15,7 @@
 - [선택 편향은 왜 교란요인과 다른가](ko/05-selection-bias.md)
 - [그래프로 원인과 비교를 그려보기](ko/06-causal-graphs.md)
 - [회귀를 조건부 비교로 읽기](ko/07-regression-adjustment.md)
+- [더미 변수와 집단 비교](ko/08-dummy-variables.md)
 
 ## 참고
 
