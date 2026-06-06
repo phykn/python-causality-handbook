@@ -8,12 +8,11 @@
 
 - `causal-inference-for-the-brave-and-true/`: upstream 원본 영어 자료.
 - `graph/`: 한국어 강의노트를 어떤 순서와 기준으로 쓸지 정리한 내용 그래프.
-- `samples/`: 실제 장을 만들기 전에 작성 톤과 구조를 확인하는 샘플.
-- 한국어 본문 폴더는 아직 만들지 않았다. 실제 장을 작성할 때 원본과 분리된 별도 폴더로 새로 만든다.
+- `ko/`: 한국어 강의노트 원고.
 
-## 샘플
+## 한국어 원고
 
-- [상관관계와 인과관계는 왜 다른가](samples/01-correlation-vs-causation.md)
+- [상관관계와 인과관계는 왜 다른가](ko/01-correlation-vs-causation.md)
 
 ## 한국어 작성 목차
 
