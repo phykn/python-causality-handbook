@@ -1,55 +1,87 @@
-# [한국어] Causal Inference for The Brave and True
+# Causal Inference for The Brave and True: 한국어 강의노트
 
-![img](./causal-inference-for-the-brave-and-true/data/img/brave-and-true.png)
+이 저장소는 [Causal Inference for The Brave and True](https://github.com/matheusfacure/python-causality-handbook)의 원본 영어 자료를 보존하고, 한국어 독자를 위한 강의노트를 새로 작성하기 위한 작업 공간이다.
 
-[![DOI](https://zenodo.org/badge/255903310.svg)](https://zenodo.org/badge/latestdoi/255903310)
+목표는 원문을 1:1로 번역하는 것이 아니다. 원문의 코드, 그림, 수식, 식별 논리는 보존하되, 중고등학생도 판단 순서를 따라갈 수 있도록 질문, 예시, 실패한 비교, 공정한 비교, 방법 이름, 수식과 코드 순서로 다시 설명한다.
 
-## Introduction
-This repository serves as an unofficial Korean translation of the incredible text book on causal inference titled "Causal Inference for The Brave and True." For the official Korean translation, please refer to the provided [link](https://github.com/TeamCausality/Causal-Inference-with-Python). I have created this repository for my personal study purposes. If you find this content valuable, kindly share it with others who may benefit from it and consider giving it a star on both the original repository and here as well. 😏
+## 현재 구조
 
-이 페이지는 "Causal Inference for The Brave and True"의 비공식 한국어 번역입니다. 공식 한국어 번역은 [링크](https://github.com/TeamCausality/Causal-Inference-with-Python)를 참고바랍니다. 이 페이지는 제 개인적인 공부를 위해 정리했습니다만 인과추론을 공부하고 싶으신 분께 도움이 되고자 공유하게 되었습니다. 도움이 된다면 좋겠습니다. 😏
+- `causal-inference-for-the-brave-and-true/`: upstream 원본 영어 자료.
+- `graph/`: 한국어 강의노트를 어떤 순서와 기준으로 쓸지 정리한 내용 그래프.
+- 한국어 본문 폴더는 아직 만들지 않았다. 실제 장을 작성할 때 원본과 분리된 별도 폴더로 새로 만든다.
 
+## 한국어 작성 목차
 
-## Table of contents
-||Title|ENG|KOR|Update|
-|---|---|---|---|---|
-||PART I||||
-|01|Introduction To Causality|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/01-Introduction-To-Causality.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-01-Introduction-To-Causality.ipynb)|23.05.30|
-|02|Randomised Experiments|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/02-Randomised-Experiments.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-02-Randomised-Experiments.ipynb)|23.06.03|
-|03|Stats Review: The Most Dangerous Equation|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/03-Stats-Review-The-Most-Dangerous-Equation.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-03-Stats-Review-The-Most-Dangerous-Equation.ipynb)|23.06.04|
-|04|Graphical Causal Models|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/04-Graphical-Causal-Models.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-04-Graphical-Causal-Models.ipynb)|22.12.27|
-|05|The Unreasonable Effectiveness of Linear Regression|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/05-The-Unreasonable-Effectiveness-of-Linear-Regression.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-05-The-Unreasonable-Effectiveness-of-Linear-Regression.ipynb)|22.12.27|
-|06|Grouped and Dummy Regression|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/06-Grouped-and-Dummy-Regression.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-06-Grouped-and-Dummy-Regression.ipynb)|22.12.27|
-|07|Beyond Confounders|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/07-Beyond-Confounders.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-07-Beyond-Confounders.ipynb)|22.12.28|
-|08|Instrumental Variables|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/08-Instrumental-Variables.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-08-Instrumental-Variables.ipynb)|22.12.30|
-|09|Non Compliance and LATE|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/09-Non-Compliance-and-LATE.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-09-Non-Compliance-and-LATE.ipynb)|22.12.31|
-|10|Matching|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/10-Matching.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-10-Matching.ipynb)|23.01.05|
-|11|Propensity Score|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/11-Propensity-Score.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-11-Propensity-Score.ipynb)|23.01.09|
-|12|Doubly Robust Estimation|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/12-Doubly-Robust-Estimation.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-12-Doubly-Robust-Estimation.ipynb)|23.01.10|
-|13|Difference-in-Differences|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/13-Difference-in-Differences.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-13-Difference-in-Differences.ipynb)|23.01.12|
-|14|Panel Data and Fixed Effects|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/14-Panel-Data-and-Fixed-Effects.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-14-Panel-Data-and-Fixed-Effects.ipynb)|23.01.18|
-|15|Synthetic Control|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/15-Synthetic-Control.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-15-Synthetic-Control.ipynb)|23.01.25|
-|16|Regression Discontinuity Design|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/16-Regression-Discontinuity-Design.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-16-Regression-Discontinuity-Design.ipynb)|23.01.30|
-||PART II||||
-|17|Predictive Models 101|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/17-Predictive-Models-101.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-17-Predictive-Models-101.ipynb)|23.02.17|
-|18|Heterogeneous Treatment Effects and Personalization|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/18-Heterogeneous-Treatment-Effects-and-Personalization.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-18-Heterogeneous-Treatment-Effects-and-Personalization.ipynb)|23.02.19|
-|19|Evaluating Causal Models|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/19-Evaluating-Causal-Models.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-19-Evaluating-Causal-Models.ipynb)|23.02.20|
-|20|Plug-and-Play Estimators|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/20-Plug-and-Play-Estimators.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-20-Plug-and-Play-Estimators.ipynb)|22.02.21|
-|21|Meta Learners|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/21-Meta-Learners.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-21-Meta-Learners.ipynb)|22.02.22|
-|22|Debiased/Orthogonal Machine Learning|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/22-Debiased-Orthogonal-Machine-Learning.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-22-Debiased-Orthogonal-Machine-Learning.ipynb)|22.11.22|
-|23|Challenges with Effect Heterogeneity and Nonlinearity|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/23-Challenges-with-Effect-Heterogeneity-and-Nonlinearity.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-23-Challenges-with-Effect-Heterogeneity-and-Nonlinearity.ipynb)|23.02.23|
-|24|The Difference-in-Differences Saga|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/24-The-Diff-in-Diff-Saga.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-24-The-Diff-in-Diff-Saga.ipynb)|23.03.02|
-|25|Synthetic Difference-in-Differences|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/25-Synthetic-Diff-in-Diff.ipynb)|TBD|
-||APPENDIX||||
-|26|Debiasing with Orthogonalization|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/Debiasing-with-Orthogonalization.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-Debiasing-with-Orthogonalization.ipynb)|23.03.14|
-|27|Debiasing with Propensity Score|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/Debiasing-with-Propensity-Score.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-Debiasing-with-Propensity-Score.ipynb)|23.03.22|
-|28|When Prediction Fails|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/When-Prediction-Fails.ipynb)|TBD|
-|29|Why Prediction Metrics are Dangerous For Causal Models|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/Prediction-Metrics-For-Causal-Models.ipynb)|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/KOR-Prediction-Metrics-For-Causal-Models.ipynb)|23.03.13|
-|30|Conformal Inference for Synthetic Controls|[LINK](https://nbviewer.org/github/phykn/python-causality-handbook/blob/master/causal-inference-for-the-brave-and-true/Conformal-Inference-for-Synthetic-Control.ipynb)|TBD|
+이 목차는 원본 장 제목을 그대로 따르지 않는다. 독자가 인과추론을 배울 때 필요한 판단 순서에 맞춰 다시 묶은 작성 계획이다.
 
+### 1부. 인과 질문 세우기
 
-## References
-1. [Causal Inference for The Brave and True](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
-2. [python-causality-handbook, matheusfacure](https://github.com/matheusfacure/python-causality-handbook)
-3. [Python으로 하는 인과추론 : 개념부터 실습까지
-](https://github.com/CausalInferenceLab/Causal-Inference-with-Python)
+1. 상관관계와 인과관계는 왜 다른가
+2. 처치, 결과, 반사실: 우리가 정말 알고 싶은 것
+3. 공정한 비교는 어떻게 만드는가
+4. 무작위 실험이 강한 이유
+5. 추정값은 왜 흔들리는가
+
+### 2부. 비교가 망가지는 이유
+
+6. 숨은 원인이 비교를 속이는 방식
+7. 선택 편향은 왜 confounding과 다른가
+8. 그래프로 원인과 비교를 그려보기
+9. 회귀를 조건부 비교로 읽기
+10. 더미 변수와 집단 비교
+11. 좋은 통제와 나쁜 통제
+
+### 3부. 실험 없이 비교 만들기
+
+12. 관측 자료에서 비교 대상을 찾는다는 것
+13. 도구변수: 처치를 움직이는 외부 변화
+14. 순응하지 않는 사람과 국소 효과
+15. 비슷한 사람끼리 비교하기
+16. 처치받을 가능성으로 균형 맞추기
+17. 두 모델로 버티는 추정
+18. 시간 변화로 비교하기
+19. 보이지 않는 고정 차이 제거하기
+20. 가상의 비교 대상 만들기
+21. 경계선 근처에서 비교하기
+
+### 4부. 예측을 정책으로 바꾸기
+
+22. 예측 모델은 언제 정책에 도움이 되는가
+23. 평균 효과에서 개인별 효과로
+24. 누구에게 처치할지 정하는 문제
+25. 인과 모델은 어떻게 평가하는가
+26. 기존 머신러닝 모델로 효과 추정하기
+27. S/T/X learner로 개인별 효과 추정하기
+28. 예측이 실패하는 정책 상황
+
+### 5부. 유연한 모델을 안전하게 쓰기
+
+29. 머신러닝이 인과추론에서 만드는 편향
+30. nuisance 모델과 target 효과 구분하기
+31. orthogonalization 직관
+32. cross-fitting은 왜 필요한가
+33. 비선형성과 이질적 효과의 함정
+34. DID가 깨지는 이유와 현대 DID
+35. Synthetic DID
+36. Synthetic control의 불확실성
+
+## 작성 기준
+
+각 장은 다음 흐름으로 쓴다.
+
+1. 이 장의 질문
+2. 생활 속 예시
+3. 왜 단순한 비교가 실패하는가
+4. 공정한 비교를 만들기 위해 필요한 조건
+5. 방법 이름과 핵심 용어
+6. estimator가 하는 일
+7. 코드, 그림, 수식
+8. 한계와 오해하기 쉬운 지점
+9. 학생용 확인 질문
+10. 다음 장으로 넘어가는 질문
+
+## 참고
+
+- [원본 책 웹사이트](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
+- [원본 GitHub 저장소](https://github.com/matheusfacure/python-causality-handbook)
+- [공식 한국어 번역](https://github.com/TeamCausality/Causal-Inference-with-Python)
