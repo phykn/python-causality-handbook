@@ -15,6 +15,7 @@
 - [무작위 실험이 강한 이유](ko/02-randomized-experiments.md)
 - [추정값은 왜 흔들리는가](ko/03-why-estimates-vary.md)
 - [숨은 원인이 비교를 속이는 방식](ko/04-hidden-causes-confounding.md)
+- [선택 편향은 왜 교란요인과 다른가](ko/05-selection-bias.md)
 
 ## 한국어 작성 목차
 
@@ -29,7 +30,7 @@
 ### 2부. 비교가 망가지는 이유
 
 4. 숨은 원인이 비교를 속이는 방식
-5. 선택 편향은 왜 confounding과 다른가
+5. 선택 편향은 왜 교란요인과 다른가
 6. 그래프로 원인과 비교를 그려보기
 7. 회귀를 조건부 비교로 읽기
 8. 더미 변수와 집단 비교
