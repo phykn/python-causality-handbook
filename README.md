@@ -18,6 +18,7 @@
 - [더미 변수와 집단 비교](ko/08-dummy-variables.md)
 - [좋은 통제와 나쁜 통제](ko/09-good-bad-controls.md)
 - [관측 자료에서 비교 대상을 찾는다는 것](ko/10-matching.md)
+- [처치받을 가능성으로 균형 맞추기](ko/11-propensity-score.md)
 
 ## 참고
 
