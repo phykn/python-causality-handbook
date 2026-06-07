@@ -37,9 +37,12 @@ If a reader confusion repeats, do not keep adding explanatory sentences to the s
 - New terms, formulas, and code should answer a need that the prior paragraph already created.
 - Images should explain what to look at and what to compare.
 
+## Python Environment
+
+Use the repository-local `.venv` virtual environment for Python commands.
+
 ## Repository Boundaries
 
 - `causal-inference-for-the-brave-and-true/` is the upstream reference. Do not edit it unless explicitly asked.
 - `ko/` is the Korean lecture-note draft folder.
 - `graph/` is the local process and content graph. Follow it even if it is ignored by git.
-
