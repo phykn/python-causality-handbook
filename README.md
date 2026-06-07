@@ -47,6 +47,10 @@
 - [24장. 먼저 설명되는 부분을 빼고 비교하기](ko/24-orthogonal-ml.md)
 - [25장. 같은 도움도 위치에 따라 다르게 보인다](ko/25-effect-heterogeneity-nonlinearity.md)
 
+### 5부. 시간 비교를 다시 점검하기
+
+- [26장. 먼저 설치한 곳을 비교군으로 써도 될까](ko/26-did-with-staggered-adoption.md)
+
 ## 출처
 
 - [Causal Inference for The Brave and True](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
