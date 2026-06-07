@@ -50,6 +50,7 @@
 ### 5부. 시간 비교를 다시 점검하기
 
 - [26장. 먼저 설치한 곳을 비교군으로 써도 될까](ko/26-did-with-staggered-adoption.md)
+- [27장. 비교 대상을 맞추고 시간 변화도 뺀다](ko/27-synthetic-difference-in-differences.md)
 
 ## 출처
 
