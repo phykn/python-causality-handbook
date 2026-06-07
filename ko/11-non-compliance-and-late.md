@@ -194,28 +194,7 @@ IV와 LATE는 이 둘 사이에서 더 조심스럽게 말한다.
 그 변화는 쿠폰 때문에 구매가 바뀐 사람들에게 어떤 효과를 말하는가?
 ```
 
-## 작은 숫자로 확인한다
-
-아래 코드는 10장과 같은 숫자를 LATE 관점으로 다시 읽는다.
-
-```python
-coupon_group = 100
-no_coupon_group = 100
-
-buyers_with_coupon = 60
-buyers_without_coupon = 30
-
-win_gap_from_coupon = 1.5
-
-changed_buyers = buyers_with_coupon - buyers_without_coupon
-first_stage = changed_buyers / coupon_group
-
-late = win_gap_from_coupon / first_stage
-
-changed_buyers, round(first_stage, 2), round(late, 1)
-```
-
-결과는 이렇게 읽으면 된다.
+## 작은 숫자를 다시 읽으면
 
 ```text
 쿠폰 때문에 구매가 바뀐 사람 수 = 30명

@@ -282,29 +282,9 @@ E[Y | T = 1] - E[Y | T = 0]
 
 편향이 크면 평균 차이는 인과 효과와 멀어진다. 편향이 0에 가까우면 평균 차이는 인과 효과에 가까워진다.
 
-## 숫자로 다시 확인한다
+## 숫자를 다시 읽으면
 
-방금 본 네 명의 예시를 코드로도 계산할 수 있다.
-
-```python
-treated_observed = [69, 67]
-untreated_observed = [48, 50]
-
-treated_without_mouse = [62, 60]
-treated_with_mouse = [69, 67]
-untreated_without_mouse = [48, 50]
-
-association = sum(treated_observed) / 2 - sum(untreated_observed) / 2
-effect = sum(
-    with_mouse - without_mouse
-    for with_mouse, without_mouse in zip(treated_with_mouse, treated_without_mouse)
-) / 2
-bias = sum(treated_without_mouse) / 2 - sum(untreated_without_mouse) / 2
-
-association, effect, bias
-```
-
-결과는 같은 구조를 보여준다.
+앞에서 본 숫자는 같은 구조를 보여준다.
 
 ```text
 관측된 평균 차이 = 19
@@ -312,7 +292,7 @@ association, effect, bias
 원래 차이 = 12
 ```
 
-코드는 새로운 이야기를 하지 않는다. 앞에서 표로 본 내용을 숫자로 다시 확인할 뿐이다.
+평균 차이 19%p 안에는 장비 효과 7%p와 원래 차이 12%p가 함께 들어 있다.
 
 ## 믿으려면 비교가 공정해야 한다
 

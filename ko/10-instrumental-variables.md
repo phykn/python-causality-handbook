@@ -248,34 +248,13 @@
 
 쿠폰이 구매를 충분히 움직이지 못하면, 그 쿠폰으로 마우스 효과를 읽기 어렵다.
 
-## 작은 숫자로 확인한다
-
-아래 코드는 앞에서 본 도구변수 계산을 확인한다.
-
-```python
-coupon_purchase_rate = 60
-no_coupon_purchase_rate = 30
-
-coupon_win_rate = 57.5
-no_coupon_win_rate = 56.0
-
-first_stage = coupon_purchase_rate - no_coupon_purchase_rate
-reduced_form = coupon_win_rate - no_coupon_win_rate
-
-iv_effect = reduced_form / first_stage * 100
-
-round(first_stage, 1), round(reduced_form, 1), round(iv_effect, 1)
-```
-
-결과는 이렇게 읽으면 된다.
+## 작은 숫자를 읽어 보면
 
 ```text
 쿠폰이 구매율을 움직인 정도 = 30.0%p
 쿠폰이 승률을 움직인 정도 = 1.5%p
 도구변수로 읽은 구매 효과 = 5.0%p
 ```
-
-코드는 새 내용을 설명하지 않는다.
 
 쿠폰이 만든 승률 차이를 쿠폰이 만든 구매 차이로 나누는 계산을 확인할 뿐이다.
 

@@ -287,52 +287,7 @@
 
 이 질문이 우리가 원래 묻고 싶었던 질문에 더 가깝다.
 
-## 섞인 차이를 숫자로 풀어 보면
-
-아래 코드는 전체 평균 차이와 유형 안에서 비교한 차이가 얼마나 다른지 보여준다.
-
-```python
-players = []
-
-def add_players(player_type, mouse, win_rate, count):
-    for _ in range(count):
-        players.append({
-            "type": player_type,
-            "mouse": mouse,
-            "win_rate": win_rate,
-        })
-
-add_players("serious", "expensive", 70, 8)
-add_players("casual", "expensive", 50, 2)
-add_players("serious", "basic", 65, 2)
-add_players("casual", "basic", 45, 8)
-
-def average(rows):
-    return sum(row["win_rate"] for row in rows) / len(rows)
-
-expensive = [row for row in players if row["mouse"] == "expensive"]
-basic = [row for row in players if row["mouse"] == "basic"]
-
-overall_gap = average(expensive) - average(basic)
-
-serious_gap = average([
-    row for row in players
-    if row["type"] == "serious" and row["mouse"] == "expensive"
-]) - average([
-    row for row in players
-    if row["type"] == "serious" and row["mouse"] == "basic"
-])
-
-casual_gap = average([
-    row for row in players
-    if row["type"] == "casual" and row["mouse"] == "expensive"
-]) - average([
-    row for row in players
-    if row["type"] == "casual" and row["mouse"] == "basic"
-])
-
-overall_gap, serious_gap, casual_gap
-```
+## 섞인 차이를 풀어 보면
 
 전체로 보면 차이는 17%p다.
 
@@ -344,9 +299,9 @@ overall_gap, serious_gap, casual_gap
 가볍게 하는 사람 안에서 차이 = 5%p
 ```
 
-코드는 새 이야기를 하지 않는다.
+전체 평균만 보면 17%p가 보인다.
 
-표에서 본 착각을 계산으로 다시 확인할 뿐이다.
+하지만 비슷한 사람끼리 나누면 5%p만 남는다.
 
 ## 아무거나 맞추면 되는 건 아니다
 

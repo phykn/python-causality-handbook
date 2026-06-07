@@ -304,7 +304,7 @@ def run_experiment():
     return sum(new_result) / 10 - sum(old_result) / 10
 
 estimates = [round(run_experiment(), 1) for _ in range(5)]
-estimates
+print(estimates)
 ```
 
 여기서 `true_effect`는 7로 고정했다.

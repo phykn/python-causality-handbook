@@ -237,33 +237,7 @@ C는 실력이 높다.
 
 숨은 이유를 맞추는 것과, 사람을 고르는 문을 의심하는 것은 다른 일이다.
 
-## 랭커만 남기고 계산해 보면
-
-아래 코드는 랭커만 고르면 비교가 어떻게 달라지는지 보여준다.
-
-```python
-players = [
-    {"name": "A", "gear": "good", "skill": 90, "ranker": True},
-    {"name": "B", "gear": "good", "skill": 50, "ranker": True},
-    {"name": "C", "gear": "basic", "skill": 90, "ranker": True},
-    {"name": "D", "gear": "basic", "skill": 50, "ranker": False},
-]
-
-def average_skill(rows):
-    return sum(row["skill"] for row in rows) / len(rows)
-
-all_good = [row for row in players if row["gear"] == "good"]
-all_basic = [row for row in players if row["gear"] == "basic"]
-
-rankers = [row for row in players if row["ranker"]]
-ranker_good = [row for row in rankers if row["gear"] == "good"]
-ranker_basic = [row for row in rankers if row["gear"] == "basic"]
-
-all_gap = average_skill(all_good) - average_skill(all_basic)
-ranker_gap = average_skill(ranker_good) - average_skill(ranker_basic)
-
-all_gap, ranker_gap
-```
+## 랭커만 남기면 숫자가 바뀐다
 
 전체 유저로 보면 좋은 장비 그룹과 기본 장비 그룹의 평균 실력 차이는 0이다.
 

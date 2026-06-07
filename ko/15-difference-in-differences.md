@@ -233,24 +233,7 @@
 
 앞의 표에서 본 계산을 짧게 쓴 것이다.
 
-## 표의 계산을 직접 확인하면
-
-아래 코드는 방금 표의 차이의 차이를 계산한다.
-
-```python
-treated_before = 54
-treated_after = 63
-control_before = 50
-control_after = 56
-
-treated_change = treated_after - treated_before
-control_change = control_after - control_before
-did = treated_change - control_change
-
-treated_change, control_change, did
-```
-
-결과는 이렇게 읽으면 된다.
+## 표의 계산을 읽으면
 
 ```text
 설치 PC방 변화 = 9
@@ -258,9 +241,9 @@ treated_change, control_change, did
 차이의 차이 = 3
 ```
 
-이 코드는 새 내용을 설명하지 않는다.
+새 마우스를 단 PC방은 9%p 올랐고, 기존 PC방은 6%p 올랐다.
 
-표에서 한 계산을 확인할 뿐이다.
+그래서 새 마우스 때문에 생긴 변화로 읽을 수 있는 부분은 3%p다.
 
 ## 그래도 남는 의심
 

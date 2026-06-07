@@ -294,23 +294,7 @@ B그룹에는 5천원과 1만원만 실험했다.
 
 같은 구간을 보지 않았다면, 효과 차이는 집단 차이가 아니라 구간 차이일 수 있다.
 
-## 작은 계산으로 막힌 결과를 확인한다
-
-아래 코드는 같은 도움을 줘도 0%와 100%에 가까운 곳에서는 변화가 작게 보일 수 있음을 보여준다.
-
-```python
-groups = [
-    {"group": "A", "baseline": 5, "after_help": 7},
-    {"group": "B", "baseline": 50, "after_help": 60},
-    {"group": "C", "baseline": 95, "after_help": 97},
-]
-
-for row in groups:
-    change = row["after_help"] - row["baseline"]
-    print(row["group"], change)
-```
-
-출력은 이렇게 읽으면 된다.
+## 막힌 결과를 다시 읽으면
 
 ```text
 A 2

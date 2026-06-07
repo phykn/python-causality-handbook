@@ -248,9 +248,7 @@ mu0(x) + (1 - T) * (Y - mu0(x)) / (1 - e(x))
 
 아래 코드는 방금 표에서 이중강건 추정값을 계산한다.
 
-새로운 개념을 코드로 배우려는 것이 아니다.
-
-위에서 말한 계산을 확인하는 코드다.
+이 장은 예측값을 오차로 고치는 순서가 중요하므로, 표의 한 줄이 어떻게 보정되는지 계산으로 확인한다.
 
 ```python
 players = [
@@ -274,7 +272,7 @@ treated_mean = sum(treated_values) / len(treated_values)
 untreated_mean = sum(untreated_values) / len(untreated_values)
 effect = treated_mean - untreated_mean
 
-round(treated_mean, 2), round(untreated_mean, 2), round(effect, 2)
+print(round(treated_mean, 2), round(untreated_mean, 2), round(effect, 2))
 ```
 
 결과는 이렇게 읽으면 된다.

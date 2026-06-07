@@ -340,39 +340,14 @@ PC방마다 다른 정보가 있다.
 
 ## 정책이 고른 대상을 확인한다
 
-아래 코드는 예상 순이익이 0보다 큰 PC방만 지원하는 정책을 만든다.
+예상 순이익이 0보다 큰 PC방만 지원한다고 하자.
 
-앞에서 본 기준값 정책을 그대로 계산해 보는 것이다.
-
-```python
-pcs = [
-    {"name": "A", "predicted_profit": 8, "actual_profit": 7},
-    {"name": "B", "predicted_profit": 2, "actual_profit": 1},
-    {"name": "C", "predicted_profit": -3, "actual_profit": 4},
-    {"name": "D", "predicted_profit": -5, "actual_profit": -4},
-]
-
-selected = [
-    pc for pc in pcs
-    if pc["predicted_profit"] > 0
-]
-
-total_actual_profit = sum(pc["actual_profit"] for pc in selected)
-
-print([pc["name"] for pc in selected])
-print(total_actual_profit)
-```
-
-출력은 이렇게 읽으면 된다.
+그러면 모델은 A와 B를 고른다.
 
 ```text
-['A', 'B']
-8
+지원 대상 = A, B
+실제 순이익 합계 = 8만원
 ```
-
-모델은 A와 B를 지원 대상으로 골랐다.
-
-실제로 A와 B에서 얻은 순이익은 합쳐서 8만원이다.
 
 여기서 중요한 것은 예측 점수 자체가 아니다.
 

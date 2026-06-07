@@ -340,31 +340,7 @@ CATE가 묻는 질문은 다르다.
 
 ## 계산은 단순하지만 질문은 바뀌었다
 
-앞의 표와 같은 계산을 확인해 보자.
-
-코드는 각 그룹에서 새 마우스 있음과 없음의 차이를 계산한다.
-
-```python
-groups = [
-    {"equipment": "낡음", "pc_count": 2, "without_mouse": 50, "with_mouse": 60},
-    {"equipment": "보통", "pc_count": 5, "without_mouse": 56, "with_mouse": 60},
-    {"equipment": "이미 좋음", "pc_count": 3, "without_mouse": 70, "with_mouse": 70},
-]
-
-weighted_effects = []
-total_pc_count = 0
-
-for group in groups:
-    effect = group["with_mouse"] - group["without_mouse"]
-    weighted_effects.append(effect * group["pc_count"])
-    total_pc_count += group["pc_count"]
-    print(group["equipment"], effect)
-
-ate = sum(weighted_effects) / total_pc_count
-print(round(ate, 1))
-```
-
-출력은 이렇게 읽으면 된다.
+앞의 표를 다시 읽으면 이렇게 된다.
 
 ```text
 낡음 10

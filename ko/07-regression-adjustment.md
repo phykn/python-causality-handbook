@@ -255,52 +255,7 @@
 
 ## 손으로 나눠 보면
 
-아래 코드는 회귀를 직접 계산하지 않는다.
-
-대신 회귀가 하려는 생각을 손으로 보여준다.
-
 전체 평균 차이를 먼저 보고, 그다음 비슷한 사람끼리 나눠서 차이를 다시 본다.
-
-```python
-players = []
-
-def add_players(player_type, mouse, win_rate, count):
-    for _ in range(count):
-        players.append({
-            "type": player_type,
-            "mouse": mouse,
-            "win_rate": win_rate,
-        })
-
-add_players("serious", "expensive", 70, 8)
-add_players("casual", "expensive", 50, 2)
-add_players("serious", "basic", 65, 2)
-add_players("casual", "basic", 45, 8)
-
-def average(rows):
-    return sum(row["win_rate"] for row in rows) / len(rows)
-
-expensive = [row for row in players if row["mouse"] == "expensive"]
-basic = [row for row in players if row["mouse"] == "basic"]
-overall_gap = average(expensive) - average(basic)
-
-within_type_gaps = []
-for player_type in ["serious", "casual"]:
-    expensive_same_type = [
-        row for row in players
-        if row["type"] == player_type and row["mouse"] == "expensive"
-    ]
-    basic_same_type = [
-        row for row in players
-        if row["type"] == player_type and row["mouse"] == "basic"
-    ]
-    gap = average(expensive_same_type) - average(basic_same_type)
-    within_type_gaps.append(gap)
-
-adjusted_gap = sum(within_type_gaps) / len(within_type_gaps)
-
-overall_gap, adjusted_gap
-```
 
 결과는 이렇게 읽는다.
 
@@ -308,8 +263,6 @@ overall_gap, adjusted_gap
 전체 평균 차이 = 17%p
 비슷한 사람끼리 본 차이 = 5%p
 ```
-
-코드가 보여주는 것은 하나다.
 
 전체로 보면 장비 효과가 크게 보인다.
 

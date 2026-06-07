@@ -233,7 +233,7 @@ old_mouse = players[10:]
 new_mouse_before = sum(base_win_rate[p] for p in new_mouse) / len(new_mouse)
 old_mouse_before = sum(base_win_rate[p] for p in old_mouse) / len(old_mouse)
 
-new_mouse_before, old_mouse_before
+print(round(new_mouse_before, 1), round(old_mouse_before, 1))
 ```
 
 이 코드는 “잘하는 사람을 골라서 새 마우스를 준다”가 아니다.

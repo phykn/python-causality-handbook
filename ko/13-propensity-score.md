@@ -354,9 +354,7 @@ D는 성향 점수가 0.75인데 실제로 기존 마우스를 썼다.
 
 아래 코드는 방금 표에서 가중 평균을 계산한다.
 
-코드는 새 내용을 설명하지 않는다.
-
-위에서 말한 “드문 선택을 한 사람을 더 크게 본다”를 숫자로 확인할 뿐이다.
+가중치는 눈으로만 보면 헷갈리기 쉬우므로, 어떤 사람이 더 크게 반영되는지 계산 순서를 따라가 본다.
 
 ```python
 players = [
@@ -390,7 +388,7 @@ untreated = [row for row in players if not row["treated"]]
 plain_gap = average(treated) - average(untreated)
 weighted_gap = weighted_average(treated) - weighted_average(untreated)
 
-round(plain_gap, 2), round(weighted_gap, 2)
+print(round(plain_gap, 2), round(weighted_gap, 2))
 ```
 
 결과는 이렇게 읽으면 된다.

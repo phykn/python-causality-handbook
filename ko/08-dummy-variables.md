@@ -194,34 +194,7 @@
 
 ## 표시를 넣어 계산해 보면
 
-아래 코드는 이름표를 0과 1로 바꾸고, 더하기표로 승률을 계산한다.
-
-```python
-players = [
-    {"type": "serious", "mouse": "expensive"},
-    {"type": "serious", "mouse": "basic"},
-    {"type": "casual", "mouse": "expensive"},
-    {"type": "casual", "mouse": "basic"},
-]
-
-base = 45
-serious_effect = 20
-mouse_effect = 5
-
-for player in players:
-    serious = 1 if player["type"] == "serious" else 0
-    expensive_mouse = 1 if player["mouse"] == "expensive" else 0
-
-    predicted_win_rate = (
-        base
-        + serious_effect * serious
-        + mouse_effect * expensive_mouse
-    )
-
-    print(player["type"], player["mouse"], predicted_win_rate)
-```
-
-결과는 앞의 표와 같은 구조다.
+이름표를 0과 1로 바꾸면 앞의 표와 같은 구조를 더하기로 만들 수 있다.
 
 ```text
 serious expensive 70
@@ -229,8 +202,6 @@ serious basic 65
 casual expensive 50
 casual basic 45
 ```
-
-코드가 새 내용을 말하는 것은 아니다.
 
 더미 변수가 이름표를 0과 1로 바꾸고, 회귀식이 그 표시를 더해서 집단 평균을 만든다는 점을 확인할 뿐이다.
 

@@ -228,6 +228,8 @@ Y_it - 평균(Y_i)
 
 아래 코드는 각 PC방 평균을 빼는 과정을 확인한다.
 
+고정효과는 말보다 계산 순서가 더 직접적이다. 먼저 각 PC방의 평균을 빼고, 남은 변화만 비교한다.
+
 ```python
 rows = [
     {"pc": "A", "week": 1, "mouse": 0, "win": 54},
@@ -254,7 +256,9 @@ for row in rows:
         "win_minus_pc_mean": row["win"] - pc_means[row["pc"]],
     })
 
-[(row["pc"], row["week"], row["win_minus_pc_mean"]) for row in demeaned]
+for row in demeaned:
+    if row["week"] in [1, 4]:
+        print(row["pc"], row["week"], int(row["win_minus_pc_mean"]))
 ```
 
 결과는 이렇게 읽으면 된다.
@@ -266,9 +270,7 @@ B PC방 1주차: 자기 평균보다 2%p 낮음
 B PC방 4주차: 자기 평균보다 2%p 높음
 ```
 
-코드는 새 내용을 설명하지 않는다.
-
-표에서 한 계산을 확인할 뿐이다.
+각 PC방의 평균을 빼면, PC방끼리 원래 달랐던 수준보다 그 PC방 안에서의 변화가 더 잘 보인다.
 
 ## 시간에 따라 바뀌는 문제는 남는다
 
