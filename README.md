@@ -51,6 +51,7 @@
 
 - [26장. 먼저 설치한 곳을 비교군으로 써도 될까](ko/26-did-with-staggered-adoption.md)
 - [27장. 비교 대상을 맞추고 시간 변화도 뺀다](ko/27-synthetic-difference-in-differences.md)
+- [28장. 한 숫자만 말하면 너무 자신만만하다](ko/28-conformal-inference-synthetic-control.md)
 
 ## 출처
 
