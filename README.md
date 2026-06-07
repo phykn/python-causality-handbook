@@ -40,6 +40,7 @@
 ### 4부. 예측을 정책으로 바꾸기
 
 - [19장. 예측 모델은 언제 정책에 도움이 되는가](ko/19-prediction-policy.md)
+- [20장. 평균 효과에서 개인별 효과로](ko/20-heterogeneous-treatment-effects.md)
 
 ## 출처
 
