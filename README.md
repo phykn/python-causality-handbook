@@ -41,6 +41,7 @@
 
 - [19장. 예측 모델은 언제 정책에 도움이 되는가](ko/19-prediction-policy.md)
 - [20장. 평균 효과에서 개인별 효과로](ko/20-heterogeneous-treatment-effects.md)
+- [21장. 누구에게 처치할지 정하는 문제](ko/21-causal-model-evaluation.md)
 
 ## 출처
 
