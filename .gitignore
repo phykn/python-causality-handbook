@@ -31,6 +31,7 @@ causal-inference-for-the-brave-and-true/_build/
 causal-inference-for-the-brave-and-true-ko/_build/
 
 # Local editor and OS files
+AGENTS.md
 .github/
 .obsidian/
 graph/
