@@ -45,6 +45,7 @@
 - [22장. 기존 머신러닝 모델로 효과 추정하기](ko/22-plug-and-play-estimators.md)
 - [23장. 모델을 나눠서 효과 추정하기](ko/23-meta-learners.md)
 - [24장. 먼저 설명되는 부분을 빼고 비교하기](ko/24-orthogonal-ml.md)
+- [25장. 같은 도움도 위치에 따라 다르게 보인다](ko/25-effect-heterogeneity-nonlinearity.md)
 
 ## 출처
 
