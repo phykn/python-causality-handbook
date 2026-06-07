@@ -35,6 +35,7 @@
 - [15장. 전후 변화만 보면 왜 부족할까](ko/15-difference-in-differences.md)
 - [16장. 같은 PC방을 여러 번 보면 무엇을 뺄 수 있을까](ko/16-panel-data-fixed-effects.md)
 - [17장. 비교할 PC방이 하나도 딱 맞지 않다면](ko/17-synthetic-control.md)
+- [18장. 경계선 근처에서 비교하기](ko/18-regression-discontinuity.md)
 
 ## 출처
 
