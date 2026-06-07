@@ -36,6 +36,7 @@ If a reader confusion repeats, do not keep adding explanatory sentences to the s
 - Avoid analogies or expressions that different readers can interpret differently.
 - New terms, formulas, and code should answer a need that the prior paragraph already created.
 - Images should explain what to look at and what to compare.
+- If a new chapter likely needs an image, provide the image-generation prompt and suggested filename before drafting the file, ask the user to place the generated image in the repository root, then continue writing the chapter while waiting for the asset.
 
 ## Python Environment
 
