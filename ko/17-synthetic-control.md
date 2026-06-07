@@ -1,4 +1,4 @@
-# 15장. 비교할 PC방이 하나도 딱 맞지 않다면
+# 17장. 비교할 PC방이 하나도 딱 맞지 않다면
 
 ## 하나만 고르면 계속 부족하다
 
@@ -48,7 +48,7 @@ D는 비슷하지만 흐름이 조금 다르다.
 여러 PC방을 조금씩 섞으면 스타 PC방과 비슷해질까?
 ```
 
-![여러 PC방을 섞어 합성 비교 대상을 만든다](assets/15-synthetic-control-weighted-comparison.png)
+![여러 PC방을 섞어 합성 비교 대상을 만든다](assets/17-synthetic-control-weighted-comparison.png)
 
 그림의 왼쪽은 비교 PC방 하나를 고를 때 생기는 문제를 보여준다.
 
