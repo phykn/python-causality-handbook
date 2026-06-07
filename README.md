@@ -37,6 +37,10 @@
 - [17장. 비교할 PC방이 하나도 딱 맞지 않다면](ko/17-synthetic-control.md)
 - [18장. 경계선 근처에서 비교하기](ko/18-regression-discontinuity.md)
 
+### 4부. 예측을 정책으로 바꾸기
+
+- [19장. 예측 모델은 언제 정책에 도움이 되는가](ko/19-prediction-policy.md)
+
 ## 출처
 
 - [Causal Inference for The Brave and True](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)
