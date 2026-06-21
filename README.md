@@ -1,26 +1,48 @@
 # Causal Inference for The Brave and True: 한국어 강의노트
 
-인과추론은 어떤 선택이나 행동이 결과를 실제로 바꾸었는지 따져 보는 방법입니다.
+데이터를 보면 두 숫자가 함께 움직일 때가 많습니다.
 
-데이터를 보면 두 일이 함께 나타날 때가 많습니다. 하지만 함께 나타난다고 해서 한쪽이 다른 쪽의 원인이라고 바로 말할 수는 없습니다.
+비싼 마우스를 쓰는 사람이 승률도 높고, 쿠폰을 받은 사람이 더 많이 구매하고, 정책을 받은 지역의 지표가 좋아질 수 있습니다. 하지만 같이 움직인다고 해서 한쪽이 다른 쪽을 바꾸었다고 바로 말할 수는 없습니다.
 
-그래서 인과추론은 비교에서 시작합니다. 누구와 누구를 비교해야 하는지, 그 비교를 믿으려면 무엇이 비슷해야 하는지, 그래도 남는 의심은 무엇인지 차례대로 살펴봅니다.
+이 노트는 그 차이를 차근차근 따져 보는 한국어 강의노트입니다.
 
-이 저장소는 `Causal Inference for The Brave and True`를 참고해 작성하는 한국어 강의노트입니다.
+중심 질문은 항상 같습니다.
+
+```text
+무엇과 무엇을 비교했는가?
+그 비교를 인과 효과로 읽으려면 무엇이 비슷해야 하는가?
+그래도 남는 의심은 무엇인가?
+```
+
+공식보다 비교를 먼저 봅니다. 방법 이름은 필요가 보인 뒤에 붙입니다. 각 장은 가능한 한 작은 숫자, 표, 짧은 코드로 비교가 어떻게 만들어지는지 보여 줍니다.
+
+원본은 [Causal Inference for The Brave and True](https://matheusfacure.github.io/python-causality-handbook/landing-page.html)입니다. 이 저장소의 `ko/` 문서는 원문을 그대로 옮긴 번역이 아니라, 한국어 독자가 따라 읽기 쉽도록 다시 쓴 강의노트입니다.
+
+## 읽는 법
+
+처음 읽는다면 1장부터 순서대로 읽는 것이 좋습니다. 앞 장에서 만든 비교 감각이 뒤 장의 도구로 이어집니다.
+
+이미 인과추론을 조금 알고 있다면 관심 있는 묶음부터 읽어도 됩니다.
+
+- 1~3장: 인과 질문과 추정값의 불확실성
+- 4~9장: 비교가 왜 망가지는지
+- 10~18장: 실험 없이 비교를 만드는 방법
+- 19~25장: 예측 모델을 정책과 개인별 효과로 연결하는 방법
+- 26~28장: 시간 자료, synthetic control, 효과 범위
 
 ## 목차
 
 ### 1부. 인과 질문 세우기
 
 - [1장. 상관관계와 인과관계는 왜 다른가](ko/01-correlation-vs-causation.md)
-- [2장. 무작위 실험이 강한 이유](ko/02-randomized-experiments.md)
-- [3장. 추정값은 왜 흔들리는가](ko/03-why-estimates-vary.md)
+- [2장. 무작위 실험이 공정한 비교를 만드는 이유](ko/02-randomized-experiments.md)
+- [3장. 추정값은 왜 매번 달라지는가](ko/03-why-estimates-vary.md)
 
 ### 2부. 비교가 망가지는 이유
 
 - [4장. 숨은 이유가 평균 차이에 섞이는 방식](ko/04-hidden-causes-confounding.md)
 - [5장. 선택 편향은 왜 교란요인과 다른가](ko/05-selection-bias.md)
-- [6장. 그래프로 원인과 비교를 그려보기](ko/06-causal-graphs.md)
+- [6장. 인과 그래프는 무엇을 맞출지 정리하는 도구다](ko/06-causal-graphs.md)
 - [7장. 회귀를 조건부 비교로 읽기](ko/07-regression-adjustment.md)
 - [8장. 더미 변수와 집단 비교](ko/08-dummy-variables.md)
 - [9장. 좋은 통제와 나쁜 통제](ko/09-good-bad-controls.md)
@@ -49,9 +71,9 @@
 
 ### 5부. 시간 비교를 다시 점검하기
 
-- [26장. 먼저 설치한 곳을 비교군으로 써도 될까](ko/26-did-with-staggered-adoption.md)
+- [26장. 먼저 설치한 곳을 비교 대상으로 써도 될까](ko/26-did-with-staggered-adoption.md)
 - [27장. 비교 대상을 맞추고 시간 변화도 뺀다](ko/27-synthetic-difference-in-differences.md)
-- [28장. 한 숫자만 말하면 너무 자신만만하다](ko/28-conformal-inference-synthetic-control.md)
+- [28장. 한 숫자만 말하면 너무 단정적이다](ko/28-conformal-inference-synthetic-control.md)
 
 ## 출처
 
